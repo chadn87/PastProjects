@@ -1,0 +1,327 @@
+/*
+CSS for Car Guy Trailers Cost Form
+Author:Chad Nelson
+Last Updated:02/16/2014
+*/
+
+body{
+background-color:#000000;
+font: 1em Verdana,Arial,Helvetica,sans-serif;
+font-weight:bold;
+padding: 0 0 0 0;
+}
+#title{
+	width:100%;
+	height:80px;
+	background:#999;
+	border-radius:10px;
+}
+#title h1{
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  text-align:left;
+	color: #444;
+	margin: 0 0 0 66px;
+	padding: 1% 0 1% 0;
+	font-size: 51px;
+	line-height: 44px;
+	letter-spacing: -2px;
+	font-weight: bold;
+}
+#navigation {
+	width: 800px;
+	height:40px;
+	margin: auto;
+	padding: 0 5% 0 5%;
+	list-style: none;
+	background-color: #444;
+	border-bottom: 3px solid #000000; 
+	border-top: 3px solid #000000; 
+}
+#navigation li {
+	float: left; 
+	}
+#navigation li a {
+	text-align:center;
+	display: block;
+	padding: 8px 25px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;
+	border-right: 3px solid #000000; 
+}
+#navigation li a:hover {
+	color: #c00;
+	background-color: #fff; 
+}
+h3{
+border-bottom:5px solid Black;
+}
+
+#formStyle{
+	position:relative;
+	width:800px;
+	height:420px;
+	margin:auto;
+	background:#FFFFFF;
+	color:#000000;
+	padding:1% 5% 0 5%;
+	background:#E1E7F0;
+}
+div #formStyle form, input, textarea{
+
+}
+
+label {
+	display:inline-block;
+	width:150px;
+	margin-top:10px;
+	margin-right:15px;
+	font-family:Aharoni,times, Times New Roman, times-roman, georgia, serif;
+}
+#map{
+	position:relative;
+	top:-370px;
+	left:410px;
+	height: 325px;
+	width: 400px;
+	border: 1px solid;
+	border-radius:10px;
+}
+.mapStart{
+	position:relative;
+	top:-5px;
+	left:450px;
+	z-index:5;
+}
+.mapEnd{
+	position:relative;
+	top:-5px;
+	left:460px;
+	z-index:5;
+}
+table{
+	background:#ffffff;
+	color:#000000;
+	width:100%;
+	margin:auto;
+}
+table caption{
+	font-family:Aharoni,times, Times New Roman, times-roman, georgia, serif;
+	font-size:1.5 em;
+	padding:2%;
+	border-bottom:5px solid #000000;
+}
+
+#order_table{
+	width:800px;
+	height:100%;
+	margin:auto;
+	background:#FFFFFF;
+	font:300px;
+	padding:0 5% 0 5%;
+}
+#formStyle2{
+	position:relative;
+	width:800px;
+	height:150px;
+	margin:auto;
+	background:#E1E7F0;
+	padding:0 5% 0 5%;
+}
+#footer{
+    height:50px;
+    width:800px;
+    background:#999;
+    margin:auto;
+	padding:0 5% 0 5%;
+	text-align:right;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	font-size:.6em;
+	border:2px solid #000000;
+}
+
+
+/*
+#order_table css for printable view format
+*/
+
+.customerInfo{
+	font-size:18pt;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+.brand{
+	font-size:18pt;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+
+.model{
+	font-size:18pt;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+
+.model_price{
+	font-size:18pt;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+.option{
+	font-size:18pt;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+.price{
+	font-size:18pt;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+.shipping{
+	font-size:18pt;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+.ship-price{
+	font-size:18pt;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+.total{
+	font-size:18pt;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+.amt_charged{
+	font-size:18pt;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+
+/* modified CSS table from http://www.csstablegenerator.com/
+changed to be better used for this pages purpose
+*/
+
+.CSSTableGenerator {
+	margin:0px;padding:0px;
+	width:100%;
+	border:1px solid #000000;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}.CSSTableGenerator table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	border:1px solid #000000;
+	width:100%;
+	height:100%;
+	margin:0 0 5% 0;
+	padding:0;
+}
+.CSSTableGenerator tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.CSSTableGenerator tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}.CSSTableGenerator tr:hover td{
+	
+}
+.CSSTableGenerator tr:nth-child(odd){ background-color:#e5e5e5; }
+.CSSTableGenerator tr:nth-child(even)    { background-color:#ffffff; }
+.CSSTableGenerator td{
+	vertical-align:middle;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:13px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}
+
+.CSSTableGenerator tr:nth-child(5) th{
+	background:-o-linear-gradient(bottom, #cccccc 5%, #b2b2b2 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #b2b2b2) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #b2b2b2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#b2b2b2");	background: -o-linear-gradient(top,#cccccc,b2b2b2);
+
+	background-color:#cccccc;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}
+
+.CSSTableGenerator tr:last-child th{
+	background:-o-linear-gradient(bottom, #cccccc 5%, #b2b2b2 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #b2b2b2) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #b2b2b2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#b2b2b2");	background: -o-linear-gradient(top,#cccccc,b2b2b2);
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	background-color:#cccccc;
+	text-align:center;
+	border-width:1px 1px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}
+
+.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child th{
+	background:-o-linear-gradient(bottom, #cccccc 5%, #b2b2b2 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #b2b2b2) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #b2b2b2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#b2b2b2");	background: -o-linear-gradient(top,#cccccc,b2b2b2);
+
+	background-color:#cccccc;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}
+
+.CSSTableGenerator tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	font-weight:bold;
+	border-width:0px 0px 1px 1px;
+}
+
+.CSSTableGenerator tr:last-child td{
+font-weight:bold;
+background:yellow;
+}
+

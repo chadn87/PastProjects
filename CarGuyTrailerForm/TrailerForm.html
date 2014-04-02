@@ -1,0 +1,108 @@
+<!--HTML for Car guy trailer cost form
+Author:Chad Nelson
+Last updated:02/16/2014
+-->
+
+<!-- This form is designed for google chrome and Firefox, it may yield unwanted results in other browsers
+This is the public version of the form and all numbers do not reflect actual costs.-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>CarGuy Trailers Order Form</title>
+<link type="text/css" rel="stylesheet" href="FormCSS.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="TrailerData.js"></script>
+<script src="FormJS.js"></script>
+
+</head>	
+
+<body>
+	<div id="title">
+	<h1>Customer Order Form</h1>
+	</div>
+	<ul id ="navigation">
+		<li><a href="http://www.carguytrailers.com">Car Guy Trailers</a></li>
+		<li><a href="http://www.carguystl.com/inventory.aspx?bs=26">Inventory</a></li>
+		<li><a href="http://102ironworks.weebly.com/about-us.html">Ironworks</a></li>
+		<li><a href="http://www.arisingindustries.com/">Arising</a></li>
+	</ul>
+		
+	<div id ="formStyle">
+	<form>
+		<p>
+		<h3>Customer Information</h3>
+		<label>Customer Name:</label>
+			<input type="text" name="name" id="name" ><br>
+
+		<label>Phone Number:</label>
+		<input type="text" name="phone" id="phone"><br>
+
+		<label>Customer Email:</label>
+		<input type="text" name="email" id="email"><br>
+		
+		</p>
+		<p>
+		<h3>Trailer Information</h3>
+		<label>Trailer Brand</label>
+			<select name="trailer_brand" id="trailer_brand">
+				<option selected="selected"id="brand">Choose Trailer Brand.</option>
+				</select><br>
+		<label>Color:</label>
+		<input id ="colorChoice" type="text" style="width:80px;"></input><br/>
+		<label>Trailer Model</label>
+			<select name="trailer_model" id="trailer_model">
+				<option selected="selected"id="model">Choose Trailer Model.</option>
+				</select><br>
+		</p>
+		<p>
+		<label>Options:</label><br/>
+		<input type="text" value="Type Desired Option Here" name="trailer_option" id="trailer_option">   
+		$ <input type="text" value ="price" style="width:60px;" name="option_price" id="option_price">
+		<input type="button" id="add_option" value="Add To Order"><br/>
+		</p>
+		<input type ="text" value ="3701 Mueller Rd,St.Charles,MO"id= "start" class="mapStart"></input>
+		<input type ="text" value="destination" id ="end" class="mapEnd"></input>
+		
+		</form>
+		<div id = "map"></div>
+		</div>
+		
+		<div id="order_table" class="CSSTableGenerator"  style="display: none">
+		<table>
+		<caption>Customer Order Information</caption>
+		<tr><th>Customer Info</th><th>Cost</th><th></th></tr>
+		<tr><td id = "customer_name" class = "customerInfo">Name: <span></span></td><td></td><td></td></tr>
+		<tr><td id = "customer_phone" class = "customerInfo">Phone: <span></span></td><td></td><td></td></tr>
+		<tr><td id = "customer_email" class = "customerInfo">E-mail: <span></span></td><td></td><td></td></tr>
+		<tr><th>Desired Trailer</th><th></th><th></th></tr>
+		<tr>
+		<td class = "brand"></td><td></td><td></td>
+		</tr>
+		<tr id="model_row">
+		<td class ="model"></td>
+		<td class="model_price"></td><td></td>
+		</tr>
+		<tr>
+		<td class = "shipping">Ship To: <span></span></td>
+		<td class = "ship_price"></td><td></td>
+		</tr>
+		<tr>
+		<th></th>
+		<td class = "total"></td>
+		<td class = "amt_charged"></td>
+		</table>
+		</div>
+		<div id ="formStyle2">
+		<label>Customer Price:</label>
+		$ <input type="text" id = "charge"></input><br/>
+		<input type="button" id="print-button" value="Printable View"></input>
+		</div>
+		<div id="footer">
+		Posted By:Chad Nelson<br>
+		@ 02/14/2014
+		</div>
+</body>
+</html>
