@@ -10,5 +10,3 @@ Mapify(Javascript) - a group project I did in a class and it uses the google map
 Pet Simulator(Java) - school project in which I created a text based game where you can feed, walk, bathe a dog.
 
 PrimeNumber(C++) - My first programming project. It takes a file full of numbers and finds all the prime numbers in it.
-
-Will add more soon.
